@@ -1,0 +1,39 @@
+<div class="game-container">
+	<!-- <h2>{{text}}</h2>
+	<div class="board-row" *ngFor="let road of roadMap; let row = index">
+		<div>hello i am board-row- {{row}}</div>
+		<div class="square" *ngFor="let sub of road; let subIdx = index">
+			<div>----hello i am square- {{subIdx}}</div>
+		</div>
+	</div> -->
+
+	<div class="board-row" *ngFor="let road of roadMap let row = index">
+		<app-square *ngFor="let sub of road; let idx = index" [num]="idx" [square]="squares[idx]"></app-square>
+	</div>
+
+
+	<!-- <div class="board-row">
+		<app-square [num]="0" [square]="squares[0]" ></app-square>
+		<app-square [num]="1" [square]="squares[1]" ></app-square>
+		<app-square [num]="2" [square]="squares[2]" ></app-square>
+		<app-square [num]="3" [square]="squares[3]" ></app-square>
+	</div>
+	<div class="board-row">
+		<app-square [num]="4" [square]="squares[4]" ></app-square>
+		<app-square [num]="5" [square]="squares[5]" ></app-square>
+		<app-square [num]="6" [square]="squares[6]" ></app-square>
+		<app-square [num]="7" [square]="squares[7]" ></app-square>
+	</div>
+	<div class="board-row">
+		<app-square [num]="8"  [square]="squares[8]" ></app-square>
+		<app-square [num]="9"  [square]="squares[9]" ></app-square>
+		<app-square [num]="10" [square]="squares[10]"></app-square>
+		<app-square [num]="11" [square]="squares[11]"></app-square>
+	</div>
+	<div class="board-row">
+		<app-square [num]="12" [square]="squares[12]"></app-square>
+		<app-square [num]="13" [square]="squares[13]"></app-square>
+		<app-square [num]="14" [square]="squares[14]"></app-square>
+		<app-square [num]="15" [square]="squares[15]"></app-square>
+	</div> -->
+</div>
